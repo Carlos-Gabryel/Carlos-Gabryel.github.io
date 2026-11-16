@@ -44,7 +44,9 @@ h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:800;margin-bottom:12px;letter-sp
 .video{margin-top:40px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
 .video video{width:100%;height:auto;aspect-ratio:16/9}
 .band{background:var(--side);border-block:1px solid var(--line)}
-.feat{display:grid;gap:20px;align-items:start}
+.feat{display:grid;gap:20px;align-items:stretch}
+.card .shot{margin-top:auto;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left}
+.card .shot.inteira{object-fit:contain;object-position:center;padding:10px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
 .card h3{font-size:1.15rem}
 .card p{margin:0;color:var(--mut);font-size:.95rem}
@@ -83,30 +85,30 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   <h2>Tudo da sua live, num lugar só</h2>
   <p class="lead">Chega de abas e programas espalhados. Você abre o LiveHub e o OBS, e o chat de todas as plataformas, os alertas e o bot já funcionam.</p>
   <div class="feat">
-    <article class="card wide"><h3>Chat de todas as plataformas</h3>
+    <article class="card"><h3>Chat de todas as plataformas</h3>
       <p>Mensagens da Twitch, Kick, YouTube e TikTok juntas, num painel (dock) dentro do OBS. Entrando com a sua conta você responde pelo próprio painel e modera: apagar mensagem, timeout e banir.</p>
-      <img src="img/chat-dock.png" alt="Chat unificado no dock do OBS" loading="lazy" style="width:100%;height:320px;object-fit:cover;object-position:top"></article>
+      <img class="shot" src="img/chat-dock.png" alt="Chat unificado no dock do OBS" loading="lazy"></article>
     <article class="card"><h3>Alertas na tela</h3>
       <p>Follow, sub, raid, bits, Super Chat e doações aparecem na live com som, imagem ou vídeo, e podem ser lidos em voz alta.</p>
-      <img src="img/alerta.png" alt="Alerta exibido na tela da live" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot inteira" src="img/alerta.png" alt="Alerta exibido na tela da live" loading="lazy"></article>
     <article class="card"><h3>Chat do seu jeito</h3>
       <p>Fonte, tamanho, cores, contorno, ícones, emotes e animações. As mudanças valem na hora, sem reiniciar.</p>
-      <img src="img/config-aparencia.png" alt="Tela de aparência do chat" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot" src="img/config-aparencia.png" alt="Tela de aparência do chat" loading="lazy"></article>
     <article class="card"><h3>Bot do chat</h3>
       <p>Comandos com variáveis, mensagens automáticas e controle de quem pode usar cada comando.</p>
-      <img src="img/config-bot.png" alt="Tela de configuração do bot" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot" src="img/config-bot.png" alt="Tela de configuração do bot" loading="lazy"></article>
     <article class="card"><h3>Recompensas de pontos</h3>
       <p>Ligue um som a cada recompensa do canal, ou faça o LiveHub ler em voz alta (TTS) o que o espectador escreveu.</p>
-      <img src="img/config-sons.png" alt="Tela de sons e recompensas" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot" src="img/config-sons.png" alt="Tela de sons e recompensas" loading="lazy"></article>
     <article class="card"><h3>Metas e enquetes</h3>
       <p>Barras de metas que sobem sozinhas e enquetes votadas pelo público digitando o número no chat.</p>
-      <img src="img/metas.png" alt="Barras de metas na live" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot inteira" src="img/metas.png" alt="Barras de metas na live" loading="lazy"></article>
     <article class="card"><h3>Painel da live</h3>
       <p>Veja se o OBS está ao vivo, os espectadores somados de todas as plataformas e troque título e categoria sem sair do OBS.</p>
-      <img src="img/painel.png" alt="Painel da live no OBS" loading="lazy" style="width:100%;height:340px;object-fit:cover;object-position:top"></article>
+      <img class="shot" src="img/painel.png" alt="Painel da live no OBS" loading="lazy"></article>
     <article class="card"><h3>OBS sem dor de cabeça</h3>
       <p>O LiveHub acha o OBS sozinho e cria as fontes com um clique em “Criar fontes no OBS”. Ou copie os links prontos.</p>
-      <img src="img/config-links.png" alt="Tela de links para o OBS" loading="lazy" style="width:100%;height:auto"></article>
+      <img class="shot" src="img/config-links.png" alt="Tela de links para o OBS" loading="lazy"></article>
     <article class="card wide"><h3>E mais</h3>
       <p>Aviso no Discord quando a live começa, resumo do fim da live (duração, pico de espectadores, seguidores, subs, doações e quem mais falou), atualização automática com um clique, e ele fica na bandeja do Windows, podendo iniciar junto com o Windows.</p></article>
   </div>
